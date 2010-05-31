@@ -32,7 +32,7 @@ module PlanetArgon
         if div_content.blank?
           return ""
         else
-          return content_tag( 'div', div_content, :id => div_id, :class => div_class )
+          return content_tag( 'div', div_content.html_safe, :id => div_id, :class => div_class )
         end
       end
       
